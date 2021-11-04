@@ -509,10 +509,11 @@ static void renderActiveModuleOverlays(F32 alpha, F32 radius, U32 sensorTime, bo
    // Shields
    if(shieldActive)
    {
-      F32 shieldRadius = radius + 3;      // radius is the ship radius
+      F32 shieldRadius = radius + 30;      // radius is the ship radius
 
-      glColor(Colors::yellow, alpha);
+      glColor(Colors::gold, alpha);
       drawCircle(0, 0, shieldRadius);
+      //drawStar(Point(0, 0), 10, shieldRadius + 150, shieldRadius);
    }
 
 #ifdef SHOW_SERVER_SITUATION
